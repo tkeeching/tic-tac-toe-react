@@ -1,0 +1,15 @@
+.tile {
+  display: grid;
+  place-items: center;
+  border: 1px dashed gray;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  font-size: 3rem;
+}
+
+.tile:hover {
+  background-color: lightskyblue;
+  transition: background-color 0.3s ease-out;
+  cursor: pointer;
+}

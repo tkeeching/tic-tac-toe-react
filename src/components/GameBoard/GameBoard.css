@@ -1,0 +1,9 @@
+.gameboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+  grid-gap: 10px;
+  /* width: 30%; */
+  margin: 0 auto;
+}

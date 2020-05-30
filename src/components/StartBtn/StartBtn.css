@@ -1,0 +1,26 @@
+.startbtn {
+  margin: 20px auto;
+}
+
+.startbtn button {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background:
+    linear-gradient(
+      to right, 
+      lightcoral 0%,
+      lightcoral 100%
+    );
+  background-position: left;
+  background-size: 0 0;
+  background-repeat: repeat-y;
+  transition: background-size 0.1s ease-out;
+}
+
+.startbtn button:hover {
+  cursor: pointer;
+  background-size: 100% 1px;
+}
+

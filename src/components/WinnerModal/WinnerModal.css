@@ -6,7 +6,7 @@
   bottom: 0;
   display: grid;
   place-items: center;
-  pointer-events: none;
+  /* pointer-events: none; */
   background: rgba(255, 255, 255, 0.9)
 }
 

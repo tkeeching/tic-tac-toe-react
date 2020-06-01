@@ -1,8 +1,8 @@
 import React from 'react';
 import './WinnerModal.css';
 
-const WinnerModal = ({ winner }) => (
-  <div className="winner-modal">
+const WinnerModal = ({ winner, onClick }) => (
+  <div className="winner-modal" onClick={onClick}>
     <div className="winner-modal__box">
       Winner winner chicken dinner
       <br />

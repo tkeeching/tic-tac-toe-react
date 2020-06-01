@@ -121,7 +121,7 @@ class GameBoard extends React.Component {
             score={oScore}
           />
         </div>
-        {(finished || winner) && <WinnerModal winner={winner} />}
+        {(finished || winner) && <WinnerModal winner={winner} onClick={this.handleRestart} />}
       </div>
     )
   }

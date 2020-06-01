@@ -3,6 +3,7 @@ import './GameBoard.css';
 import Tile from '../Tile/Tile'; 
 import StartBtn from '../StartBtn/StartBtn';
 import ScoreBoard from '../ScoreBoard/ScoreBoard';
+import WinnerModal from '../WinnerModal/WinnerModal';
 
 class GameBoard extends React.Component {
   constructor(props) {
@@ -31,28 +32,17 @@ class GameBoard extends React.Component {
       [2, 4, 6]
     ];
 
-    winningMoves.forEach(move => {
-      if (move.every(index => currentTiles[index].includes('X'))) {
-        this.setState({
-          winner: 'X',
-          paused: true,
-          xScore: this.state.xScore + 1
-        })
-      const winner = 'X';
-      console.log('game paused');
-      console.log(winner + ' wins');
-      }
+    const xWins = winningMoves.some(move => 
+      move.every(index => currentTiles[index].includes('X')))
 
-      if (move.every(index => currentTiles[index].includes('O'))) {
-        this.setState({
-          winner: 'O',
-          paused: true,
-          oScore: this.state.oScore + 1
-        })
-      const winner = 'O';
-      console.log('game paused');
-      console.log(winner + ' wins');
-      }
+    const oWins = winningMoves.some(move => 
+      move.every(index => currentTiles[index].includes('O')))
+
+    this.setState({
+      winner: xWins ? "X" : oWins ? "O" : undefined,
+      paused: xWins || oWins,
+      xScore: this.state.xScore + (xWins ? 1 : 0),
+      oScore: this.state.oScore + (oWins ? 1 : 0)
     })
   }
 
@@ -80,7 +70,8 @@ class GameBoard extends React.Component {
     this.setState({
       started: false,
       paused: true,
-      tiles: Array(9).fill('')
+      tiles: Array(9).fill(''),
+      winner: ''
     });
   }
 
@@ -92,20 +83,25 @@ class GameBoard extends React.Component {
   }
 
   render () {
-    const { tiles, xScore, oScore, started } = this.state;
+    const { tiles, xScore, oScore, started, winner } = this.state;
+    const finished = tiles.every(tile => tile)
 
     return (
       <div className="gameboard">
-        <h1>Tic</h1>
-        <h1>Tac</h1>
-        <h1>Toe</h1>
-        {tiles.map((tile, index) => (
-          <Tile 
-            key={index}
-            onClick={() => this.handleClick(index)}
-            symbol={tile} 
-          />
-        ))}
+        <h1>Tic Tac Toe</h1>
+        <div className="gameboard__tiles-section">
+          <div className="gameboard__tiles-container">
+            <div className="gameboard__tiles">
+              {tiles.map((tile, index) => (
+                <Tile 
+                  key={index}
+                  onClick={() => this.handleClick(index)}
+                  symbol={tile} 
+                />
+              ))}
+            </div>
+          </div>
+        </div>
         {started && 
           <StartBtn 
             onClick={() => this.handleRestart()}
@@ -115,14 +111,17 @@ class GameBoard extends React.Component {
         {!started &&
           <StartBtn onClick={() => this.handleStart()} />
         }
-        <ScoreBoard 
-          symbol="X"
-          score={xScore}
-        />
-        <ScoreBoard 
-          symbol="O"
-          score={oScore}
-        />
+        <div className="gameboard__scoreboard-container">
+          <ScoreBoard 
+            symbol="X"
+            score={xScore}
+          />
+          <ScoreBoard 
+            symbol="O"
+            score={oScore}
+          />
+        </div>
+        {(finished || winner) && <WinnerModal winner={winner} />}
       </div>
     )
   }

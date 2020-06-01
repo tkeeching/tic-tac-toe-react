@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/tic-tac-toe-react/%E2%80%A9/static/css/main.f529e0c2.chunk.css",
-    "main.js": "/tic-tac-toe-react/%E2%80%A9/static/js/main.62fc5c03.chunk.js",
-    "main.js.map": "/tic-tac-toe-react/%E2%80%A9/static/js/main.62fc5c03.chunk.js.map",
-    "runtime-main.js": "/tic-tac-toe-react/%E2%80%A9/static/js/runtime-main.ca6a0741.js",
-    "runtime-main.js.map": "/tic-tac-toe-react/%E2%80%A9/static/js/runtime-main.ca6a0741.js.map",
-    "static/js/2.f0733e3f.chunk.js": "/tic-tac-toe-react/%E2%80%A9/static/js/2.f0733e3f.chunk.js",
-    "static/js/2.f0733e3f.chunk.js.map": "/tic-tac-toe-react/%E2%80%A9/static/js/2.f0733e3f.chunk.js.map",
-    "index.html": "/tic-tac-toe-react/%E2%80%A9/index.html",
-    "precache-manifest.375348b4b946e1d26c926eb8f3ab6df3.js": "/tic-tac-toe-react/%E2%80%A9/precache-manifest.375348b4b946e1d26c926eb8f3ab6df3.js",
-    "service-worker.js": "/tic-tac-toe-react/%E2%80%A9/service-worker.js",
-    "static/css/main.f529e0c2.chunk.css.map": "/tic-tac-toe-react/%E2%80%A9/static/css/main.f529e0c2.chunk.css.map",
-    "static/js/2.f0733e3f.chunk.js.LICENSE.txt": "/tic-tac-toe-react/%E2%80%A9/static/js/2.f0733e3f.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/tic-tac-toe-react/%E2%80%A9/static/media/logo.5d5d9eef.svg"
+    "main.css": "/tic-tac-toe-react/static/css/main.f529e0c2.chunk.css",
+    "main.js": "/tic-tac-toe-react/static/js/main.3ddf7229.chunk.js",
+    "main.js.map": "/tic-tac-toe-react/static/js/main.3ddf7229.chunk.js.map",
+    "runtime-main.js": "/tic-tac-toe-react/static/js/runtime-main.7d79bb49.js",
+    "runtime-main.js.map": "/tic-tac-toe-react/static/js/runtime-main.7d79bb49.js.map",
+    "static/js/2.f0733e3f.chunk.js": "/tic-tac-toe-react/static/js/2.f0733e3f.chunk.js",
+    "static/js/2.f0733e3f.chunk.js.map": "/tic-tac-toe-react/static/js/2.f0733e3f.chunk.js.map",
+    "index.html": "/tic-tac-toe-react/index.html",
+    "precache-manifest.5d0f7ab3708b3d930a150519c443824a.js": "/tic-tac-toe-react/precache-manifest.5d0f7ab3708b3d930a150519c443824a.js",
+    "service-worker.js": "/tic-tac-toe-react/service-worker.js",
+    "static/css/main.f529e0c2.chunk.css.map": "/tic-tac-toe-react/static/css/main.f529e0c2.chunk.css.map",
+    "static/js/2.f0733e3f.chunk.js.LICENSE.txt": "/tic-tac-toe-react/static/js/2.f0733e3f.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/tic-tac-toe-react/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ca6a0741.js",
+    "static/js/runtime-main.7d79bb49.js",
     "static/js/2.f0733e3f.chunk.js",
     "static/css/main.f529e0c2.chunk.css",
-    "static/js/main.62fc5c03.chunk.js"
+    "static/js/main.3ddf7229.chunk.js"
   ]
 }

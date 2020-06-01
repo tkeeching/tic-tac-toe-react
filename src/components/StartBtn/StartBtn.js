@@ -1,11 +1,14 @@
 import React from 'react';
 import './StartBtn.css';
 
-function StartBtn() {
+function StartBtn(props) {
+  const { btnText, onClick } = props;
 
   return (
     <div className="startbtn">
-      <button>Start</button>
+      <button onClick={onClick}>
+        {btnText || 'Start'}
+      </button>
     </div>
   )
 }

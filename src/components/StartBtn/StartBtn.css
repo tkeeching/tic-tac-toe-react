@@ -6,21 +6,25 @@
   font-size: 1.5rem;
   padding: 10px 20px;
   border-radius: 5px;
-  border: none;
+  border: 1px solid white;
   background:
     linear-gradient(
       to right, 
-      lightcoral 0%,
-      lightcoral 100%
+      rgba(240, 128, 128, 0.1) 0%,
+      rgba(240, 128, 128, 0.1) 100%
     );
   background-position: left;
   background-size: 0 0;
   background-repeat: repeat-y;
-  transition: background-size 0.1s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .startbtn button:hover {
   cursor: pointer;
   background-size: 100% 1px;
+  border: 1px solid lightcoral;
 }
 
+.startbtn button:focus {
+  outline: none;
+}

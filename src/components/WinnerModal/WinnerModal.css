@@ -2,8 +2,8 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
-  bottom: 0;
+  top: 5rem;
+  bottom: 45rem;
   display: grid;
   place-items: center;
   /* pointer-events: none; */
@@ -15,7 +15,14 @@
   width: 100%;
   font-size: 1.5rem;
   border-radius: 10px;
-  background: rgba(224, 255, 255, 0.8);
+  /* background: rgba(224, 255, 255, 0.8); */
   display: grid;
   place-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .winner-modal {
+    top: 0;
+    bottom: 0;
+  }
 }

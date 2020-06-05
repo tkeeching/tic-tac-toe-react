@@ -6,6 +6,10 @@
   width: 100%;
 }
 
+.gameboard__announcement {
+  height: 250px;
+}
+
 .gameboard__tiles-section {
   width: 80%;
   max-width: 500px;
@@ -31,7 +35,17 @@
 
 .gameboard__scoreboard-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   place-items: center;
   width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .gameboard {
+    grid-gap: 30px;
+  }
+
+  .gameboard__announcement {
+    display: none;
+  }
 }

@@ -89,6 +89,28 @@ class GameBoard extends React.Component {
     return (
       <div className="gameboard">
         <h1>Tic Tac Toe</h1>
+        <div className="gameboard__announcement">
+
+        </div>
+        <div className="gameboard__scoreboard-container">
+          <ScoreBoard 
+            symbol="X"
+            score={xScore}
+          />
+          {started && 
+            <StartBtn 
+              onClick={() => this.handleRestart()}
+              btnText="Restart"
+            />
+          }
+          {!started &&
+            <StartBtn onClick={() => this.handleStart()} />
+          }
+          <ScoreBoard 
+            symbol="O"
+            score={oScore}
+          />
+        </div>
         <div className="gameboard__tiles-section">
           <div className="gameboard__tiles-container">
             <div className="gameboard__tiles">
@@ -101,25 +123,6 @@ class GameBoard extends React.Component {
               ))}
             </div>
           </div>
-        </div>
-        {started && 
-          <StartBtn 
-            onClick={() => this.handleRestart()}
-            btnText="Restart"
-          />
-        }
-        {!started &&
-          <StartBtn onClick={() => this.handleStart()} />
-        }
-        <div className="gameboard__scoreboard-container">
-          <ScoreBoard 
-            symbol="X"
-            score={xScore}
-          />
-          <ScoreBoard 
-            symbol="O"
-            score={oScore}
-          />
         </div>
         {(finished || winner) && <WinnerModal winner={winner} onClick={this.handleRestart} />}
       </div>

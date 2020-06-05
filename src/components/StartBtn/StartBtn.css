@@ -3,7 +3,8 @@
 }
 
 .startbtn button {
-  font-size: 1.5rem;
+  font-size: 3rem;
+  font-family: 'Londrina Sketch', cursive;
   padding: 10px 20px;
   border-radius: 5px;
   border: 1px solid white;
@@ -27,4 +28,11 @@
 
 .startbtn button:focus {
   outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .startbtn button {
+    border: none;
+    font-size: 1.5rem;
+  }
 }

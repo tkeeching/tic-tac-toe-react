@@ -1,13 +1,16 @@
 .gameboard {
   display: grid;
   place-items: center;
-  grid-gap: 10px;
   margin: 0 auto;
   width: 100%;
 }
 
+.gameboard h1 {
+  font-size: 4rem;
+}
+
 .gameboard__announcement {
-  height: 250px;
+
 }
 
 .gameboard__tiles-section {
@@ -36,7 +39,7 @@
 .gameboard__scoreboard-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  place-items: center;
+  justify-items: center;
   width: 100%;
 }
 
@@ -45,7 +48,7 @@
     grid-gap: 30px;
   }
 
-  .gameboard__announcement {
-    display: none;
+  .gameboard h1 {
+    font-size: 3rem;
   }
 }

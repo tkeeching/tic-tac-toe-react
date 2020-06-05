@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Londrina Sketch', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: url(./paperback.jpg);
@@ -16,6 +16,7 @@ code {
 
 @media only screen and (max-width: 600px) {
   body {
-    background: none;
+    background: url(./paper.jpg);
+    background-size: 100vh;
   }
 }

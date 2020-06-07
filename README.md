@@ -4,7 +4,7 @@ A classic game of noughts and crosses
 
 Play it [HERE](https://tkeeching.github.io/tic-tac-toe-react/)
 
-<a href="https://tkeeching.github.io/tic-tac-toe-react/">
+<a href="https://tkeeching.github.io/tic-tac-toe-react/" target="_blank">
   <img src="./screenshot.png" alt="screenshot">
 </a>
 

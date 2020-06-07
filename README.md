@@ -1,5 +1,11 @@
 # tic-tac-toe-react
 
+Play it HERE(https://tkeeching.github.io/tic-tac-toe-react/)
+
+<a href="https://tkeeching.github.io/tic-tac-toe-react/">
+  <img src="./screenshot.png" width="600" height="400" alt="screenshot">
+</a>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
